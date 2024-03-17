@@ -1,48 +1,44 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Decodificador Rayza</title>
+    <title>Decodificador One</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
-    <header class="containe">
-        <div class="cabeca">
-              <img class="logo" src="./img/logo_abc.png" alt=""><details>  <summary> </summary>
-        <p> Codificador feito por Rayza Silva</p>
-        <p> Objetivo: Recurso pedagogico para Educação</p>
-        </div>
-      
-        </details>
-
-        <h1> faça uma mensagem secreta!</h1>
+    <header>     
+            <div class="header_logo">
+                  <img class="logo" src="./img/logo_abc.png" alt=""></div>
+            <div class="header_paragrafo">
+            <p class="header_paragrafo"> Codificador feito por Rayza Silva</p>
+            <p class="header_paragrafo"> Objetivo: Recurso pedagogico para Educação</p>
+            </div>
+            
     </header>
-    <div class="containe">
-        <section class="ladoesquerdo">
-    <div class="ladoesquerdo_superior">
-        <textarea id="textArea" class="texto1" type="text" rows="25" cols="60" >Digite seu texto</textarea>
-    </div>   
-     <section class="ladodireito"> 
-        <div id="ladodireito_apaga" class="ladodireito_apaga">
-             <img class="criancas" src="./img/criancas.png" alt="ilustração de crianças procurando">
-      <h4>Nenhuma mensagem encontrada</h4>
-      <p>voce pode digitar o texto quer quiser</p>
+    <main>
+        <h1> faça uma mensagem secreta!</h1>
+        <section class="sessao_um">
+        <div class="ladoEsquerdo">
+            <textarea id="textArea" class="ladoEsquerdo_textoArea" type="text" rows="10" cols="30" >Digite seu texto</textarea>
         </div>
-      
-        </section>  
-</div> 
-    <P> <img class="exclamação" src="./img/icons8-exclamação-30.png" alt="icon de exclamação">Apenas letras minúsculas e sem acento.</P>
-<button type="button" id="button_crip" class="button_crip" onclick="criptografar()"> Criptografia</button>
-<button type="button" id="button_desc" class="button_desc" onclick="descriptografar()"> Descriptografia</button>
-</section>
-
-    <script src="js.js"></script>
+        <div class="ladoDireito" id="ladoDireito">
+            <img class="ladoDireito_img_criancas" src="./img/criancas.png" alt="ilustração de crianças procurando">
+            <h4>Nenhuma mensagem encontrada</h4>
+            <p>voce pode digitar o texto quer quiser</p>
+        </section>
+        <section class="sessao_dois">
+            <P class="sessao_dois_paragrafo"> <img class="exclamacao" src="./img/icons8-exclamação-30.png" alt="icon de exclamação">Apenas letras minúsculas e sem acento.</P>
+            <button type="button" id="button_crip" class="button_crip" onclick="criptografar()"> Criptografia</button>
+            <button type="button" id="button_desc" class="button_desc" onclick="descriptografar()"> Descriptografia</button>
+            
+        </section>
+        <script src="interacao.js"></script>
+    </main>
+    <footer>
+        <a href="https://www.linkedin.com/in/rayza-simplício-020link"><img src="./img/icons-linkedin-24.png" alt="icon de Linkedin"></a>
+        <a href="https://github.com/Rayza-18"><img src="./img/icons-github-24.png" alt="icon de Github"></a>
+        <a href="https://www.instagram.com/rayza.carla/"><img src="./img/icons-instagram-24.png" alt="icon de Instagram"></a>
+    </footer>
 </body>
-<footer>
-    <a href="https://www.linkedin.com/in/rayza-simplício-020link"><img src="./img/icons-linkedin-24.png" alt="icon de Linkedin"></a>
-    <a href="https://github.com/Rayza-18"><img src="./img/icons-github-24.png" alt="icon de Github"></a>
-    <a href="https://www.instagram.com/rayza.carla/"><img src="./img/icons-instagram-24.png" alt="icon de Instagram"></a>
-</footer>
 </html>

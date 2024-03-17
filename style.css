@@ -7,7 +7,23 @@
     --cor--fundo: #ffffff;
     --cor-hover: #F8FAE5;
 }
-.cabeca{
+body{
+    display: flex;
+    width: min-content;
+    margin: 5% 10%;
+    flex-direction: column;
+    align-items: center;
+    border: 3px solid var(--cor-secundaria);
+}
+main{
+    margin: 5%;
+}
+header{
+display: flex;
+width: 688px;
+
+}
+.header_logo{
     display: flex;
     align-items: center;
     position: relative;
@@ -15,25 +31,31 @@
 .logo{
     width: 55px;
 }
-.containe{
-margin-left: 5%;
+
+.header_paragrafo{
+    color: var(--cor-secundaria);
+    font-size: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-details{
-    color: var(--cor-terciaria);
-}
 h1{
     color: var(--cor-terciaria);
     margin-left: 4%;
-   font-size: 43px;
-   margin-top: 5%;
+    font-size: 24px;
+    margin-top: 3%;
 }
-.ladoesquerdo {
-    display: inline;
-    height: 20px;
+main{
+    width: min-content;
 }
 
-.ladoesquerdo_superior {
+.sessao_um{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.ladoEsquerdo{
     border-top: solid 10px #F4CE14;
     border-left: solid 10px #F4CE14;
     background-color: var(--cor-primaria);
@@ -43,8 +65,7 @@ h1{
     margin-top: 10px;
     margin-bottom: 0px;
 }
-
-.texto1 {
+.ladoEsquerdo_textoArea{
     background-color: var(--cor-primaria);
     color: var(--cor-terciaria);
     font-size: 14px;
@@ -52,25 +73,22 @@ h1{
     font-family: 'Major Mono Display', monospace;
     border-color: var(--cor-primaria);
 }
-
-.ladodireito {
+.ladoDireito{
     border-top: solid 10px var(--cor-secundaria);
     border-left: solid 10px var(--cor-secundaria);
     border-radius: 7%;
     background-color: var(--cor-primaria);
     display: inline-block;
-    width: 400px;
-    padding: 0% 4% 4% 4%;
-    
+    width: 224px;
+    padding: 0% 2% 2% 2%;
 }
-
-.criancas {
-    width: 80%;
+.ladoDireito_img_criancas{
+    width: 124px;
 }
-
 h4 {
     font-family: 'Cousine', monospace;
     color: var(--cor-terciaria);
+    font-size: 13px;
 }
 #button_copiar{
     margin:  8% 3% 0% 3%;
@@ -78,14 +96,20 @@ h4 {
 p {
     color: var(--cor-terciaria);
     font-family: 'Cousine', monospace;
-   font-size: 17px;
+   font-size: 10px;
 }
-
+.sessao_dois_paragrafo{
+display: flex;
+align-items: center;
+}
+.exclamacao{
+width: 20px;
+}
 button {
     font-family: 'Cousine', monospace;
-    font-size: 20px;
-    height: 80px;
-    width: 350px;
+    font-size: 14px;
+    height: 62px;
+    width: 200px;
     border-radius: 20px;
     margin-bottom: 70px;
     border: solid 1px var(--cor-secundaria);
@@ -108,78 +132,73 @@ button:active {
 .button_desc {
     color: var(--cor-secundaria);
 }
-
 footer {
+    display: flex;
     background-color: var(--cor-primaria);
     text-align: center;
     padding-right: 200px;
     justify-content: center;
+    width: 488px;
 }
 
 a {
-    display: inline-block;
-    margin-left: 200px;
+    display: flex;
+    margin-left: 160px;
     margin-right: 20px;
     padding: 2% 0px 1% 0px
 }
-
-
 @media(max-width: 778px){
-    .containe{
-        background-color: aliceblue;
+    body{
+        width: 400px;
     }
-    .ladoesquerdo_superior{
-        background-color: azure;
-        border: transparent;
-        width: 70%;
+    header{
+        width: 401px;
     }
-    .texto{
-        background-color: white;
-        border: transparent;
+    main{
+        width: 422px;
     }
-    .ladodireito{
-background-color: aliceblue;
-        border: transparent;
-        box-shadow: 0px 4px 13px 1px;
-    display: block;
-    text-align: center;
-    width: 80%;
-    margin-top: 5%;
+    h1{
+        text-align: center;
+        font-size: 14px;
     }
-    
-    .criancas{
-        display: none;
-        
+    .sessao_um{
+        width: 437px;
+        display: flex;
+    flex-direction: column;
+    align-items: center;
     }
-    bottom{
-        width: 315px;
-}
-footer{
-    text-align:none ;
-    padding-right: 0px;
-    justify-content: none;
+    .ladoDireito{
+        width: 156px;
+    }
+    .ladoDireito_img_criancas{
+        width: 80px;
+    }
+    h4{
+        font-size:9px ;
+    }
+    p{
+        font-size:7px ;
+    }
+    .sessao_dois{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
 
-}
-a{
-    margin-left: 0px;
-}
-}
-@media (max-width: 425px) {
-    .containe{
-        text-align: -webkit-center;
     }
-    .ladoesquerdo{
-        background-color: aliceblue;
+  button{
+    width: 173px;
+    height: 30px;
+    font-size: 10px;
+    margin: 5px;
+  }
+  .button_crip{
+    margin-right:0px ;
+  }
+    footer{
+        width: 200px;
     }
-    .texto1{
-        background-color:aliceblue ;
-        border: transparent;
+    a{
+        margin: auto;
     }
-    button{
-        justify-content: center;
-        width: 90%;
-        margin-left: 3%;
-        
-    }
-    
 }
